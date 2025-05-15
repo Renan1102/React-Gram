@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 // solve CORS
 const allowedOrigins = [
   "http://localhost:3000",
-  "react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app",
+  "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app/",
 ];
 app.use(cors({ credentials: true, origin: allowedOrigins }));
 
