@@ -10,11 +10,7 @@
     {
       "src": "/(.*)",
       "dest": "/app.js",
-      "headers": {
-        "Access-Control-Allow-Origin": "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app/",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      }
+      "methods": ["GET", "POST"]
     }
   ]
 }
