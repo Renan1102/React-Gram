@@ -13,11 +13,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // solve CORS
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app/",
-];
-app.use(cors({ credentials: true, origin: allowedOrigins }));
+// const allowedOrigins = [
+//   "http://localhost:3000",
+//   "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app/",
+// ];
+app.use(
+  cors({
+    credentials: true,
+    origin:
+      "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app",
+  })
+);
+
+app.options("*", cors());
 
 // Upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
