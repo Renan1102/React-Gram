@@ -1,7 +1,7 @@
 export const api =
   process.env.NODE_ENV === "development"
     ? "http://localhost:5000/api"
-    : "https://react-gram-backend-git-master-renan-de-souzas-projects.vercel.app/api";
+    : "https://react-gram-backend-nine.vercel.app/api";
 export const uploads = "http://localhost:5000/uploads";
 
 export const requestConfig = (method, data, token = null, image) => {
