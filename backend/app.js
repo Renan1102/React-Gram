@@ -20,8 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     credentials: true,
-    origin:
-      "https://react-gram-frontend-git-master-renan-de-souzas-projects.vercel.app",
+    origin: "*",
   })
 );
 
